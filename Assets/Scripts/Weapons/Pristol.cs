@@ -12,7 +12,7 @@ public class Pristol : Weapon {
         // Instantiate a new bullet from prefab "bullet"
         GameObject clone = Instantiate(projectile, spawnPoint.position, spawnPoint.rotation);
         // Get the component from the new bullet
-        Bullet newBullet = clone.GetComponent<Bullet>();
+        Projectile newBullet = clone.GetComponent<Projectile>();
         // tell the bullet to fire
         newBullet.Fire(transform.forward);
     }
